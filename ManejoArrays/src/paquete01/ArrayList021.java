@@ -16,31 +16,33 @@ import java.util.Scanner;
 public class ArrayList021 {
 
     public static void main(String[] args) {
-     
+
         ArrayList<String> arreglo2 = obtenerDatos();
         String cadenaFinal = obtenerCadenaFinal(arreglo2);
         ArrayList<String> iniciales = obtenerDatosIniciales(arreglo2);
         String cadenaFinal2 = obtenerCadenaFinal(iniciales);
-        
+
         System.out.printf("%s\n", cadenaFinal);
-        
+
         System.out.printf("%s\n", cadenaFinal2);
-        
+
     }
 
-    public static ArrayList<String> obtenerDatosIniciales(ArrayList<String> nombres){
+    public static ArrayList<String> obtenerDatosIniciales(ArrayList<String> nombres) {
         ArrayList<String> arreglo = new ArrayList<>();
         String auxiliar;
         for (int i = 0; i < nombres.size(); i++) {
             auxiliar = nombres.get(i);
             auxiliar = auxiliar.substring(0, 1);
+            auxiliar = convertirMinuscula(auxiliar);
             arreglo.add(auxiliar);
+            
         }
-        
+
         return arreglo;
     }
-    
-    public static ArrayList<String> obtenerDatos(){
+
+    public static ArrayList<String> obtenerDatos() {
         ArrayList<String> arreglo2 = new ArrayList<>();
         boolean bandera = true;
         String pais;
@@ -58,23 +60,27 @@ public class ArrayList021 {
             }
         }
         return arreglo2;
-        
+
     }
-    
-    public static String convertirMayusculas(String c){
+
+    public static String convertirMayusculas(String c) {
         String miValor = c.toUpperCase();
         return miValor;
     }
-        
-    public static String obtenerCadenaFinal(ArrayList<String> lista){
+
+    public static String obtenerCadenaFinal(ArrayList<String> lista) {
         String cadenaFinal = "";
-        
+
         for (int i = 0; i < lista.size(); i++) {
             cadenaFinal = String.format("%s%s\n", cadenaFinal,
                     lista.get(i));
         }
         return cadenaFinal;
-    }    
-        
-    
+    }
+
+    public static String convertirMinuscula(String c) {
+        String miValor = c.toLowerCase();
+        return miValor;
+    }
+
 }
