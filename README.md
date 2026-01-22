@@ -1,1 +1,10 @@
 # clase07-2bim - Manejo de Arrays
+
+
+
+
+
+MATEO SEBASTIÁN JIMENEZ ESPARZA
+
+SERVIO DAVID VALVERDE LOPEZ
+
