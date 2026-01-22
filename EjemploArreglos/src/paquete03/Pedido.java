@@ -10,7 +10,8 @@ package paquete03;
  */
 public class Pedido {
 
-    public static int[][] obtenerPedidos() {
+    public static int[][] obtenerPedidos() {//Esta función envía un arreglo lleno
+                                            // de las cafeterías durante 7 días
 
         int[][] pedidosCafeterias = {
             {120, 130, 125, 140, 135, 150, 145},

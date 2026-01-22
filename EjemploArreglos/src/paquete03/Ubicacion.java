@@ -10,7 +10,9 @@ package paquete03;
  */
 public class Ubicacion {
     
-    public static String [] obtenerUbicaciones(){
+    public static String [] obtenerUbicaciones(){//Envía un arreglo lleno con to-
+                                                //das las ubicaciones de las ca-
+                                                //feterías
         String [] sedes = {"Bloque A - Biblioteca", "Bloque B - Laboratorios", 
             "Bloque C - Aulas", "Bloque D - Administración", 
             "Bloque E - Deportes", "Bloque F - Residencias", 

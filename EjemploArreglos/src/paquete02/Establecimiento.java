@@ -10,7 +10,8 @@ package paquete02;
  */
 public class Establecimiento {
     
-    public static String [] obtenerCafeterias(){
+    public static String [] obtenerCafeterias(){ //Envía un arreglo lleno con
+                                              // los nombres de las cafetería
         
         String [] cafeterias = {
             "Café Andino", "Café Pacífico", "Café Sierra", "Café Amazónico", 

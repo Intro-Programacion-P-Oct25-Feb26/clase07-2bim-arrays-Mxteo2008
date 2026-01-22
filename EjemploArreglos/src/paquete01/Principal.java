@@ -35,7 +35,7 @@ public class Principal {
         int [] pedidosMayores = Informe.obtenerMayorPedidoCafeteria(misPedidos);
         Reporte.imprimirReporte(misCafeterias, misSedes, 
                 promedioSemanal, 
-                pedidosMenores, 
+                pedidosMenores,     
                 pedidosMayores, 
                 pedidosMiercoles, 
                 cafeteriaMasPedida);
